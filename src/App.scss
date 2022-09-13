@@ -1,0 +1,305 @@
+$font: 'Roboto';
+$text-color: white;
+$main-color: rgba(220, 174, 83, 1);
+$bg-color: rgba(243, 245, 246, 1);
+
+.App {
+    background-color: $bg-color;
+}
+
+.motto-holder {
+    background-image: url('./content/race-car.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    // border: 2px tomato dotted;
+
+    header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 33px 171px 33px 171px;
+            // border: 1px blue solid;
+    
+            .logo {
+                width: 160px;
+                height: auto;
+            }
+    
+            .contact-us-1 {
+                padding: 0px 30px;
+                border: 1px $main-color solid;
+                color: $main-color;
+                background: none;
+                font-family: $font;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 25px;
+                letter-spacing: 0.2px;
+            }
+        }
+
+    .motto {
+            color: $text-color;
+            font-family: $font;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // border: 2px lime solid;
+    
+            .motto-text {
+                font-family: $font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 80px;
+                line-height: 88px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                color: white;
+                margin-bottom: 37px;
+                // border: yellow 2px solid;
+            }
+    
+            .sub-motto {
+                font-family: $font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                text-align: center;
+                // border: yellow 2px solid;
+            }
+    
+            .emphasis {
+                color: $main-color;
+            }
+    
+            .contact-us-2 {
+                padding: 10px 30px;
+                margin-top: 60px;
+                width: 164px;
+                height: 65px;
+                background: linear-gradient(96.01deg, #F7EA76 0%, #D1AF4D 111.25%);
+                box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+                border: none;
+                font-family: $font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 25px;
+                text-align: center;
+                letter-spacing: 0.2px;
+            }
+        }
+}
+
+.title {
+    width: 379px;
+    height: 42px;
+    align-self: center;
+
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+
+    color: $main-color;
+}
+
+.active {
+    background-color: $main-color;
+}
+
+.vision-and-mission-holder {
+    // border: 2px lime solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 2px yellow solid;
+    margin-top: 37px;
+
+    .missions-holder {
+        display: flex;
+        flex-direction: row;
+
+        .mission-item {
+            box-sizing: border-box;
+            width: 276px;
+            height: 272px;
+            left: 157px;
+            top: 200px;
+    
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            border-radius: 15px;
+            margin: 31px;
+            padding: 33px;
+
+            .mission-logo-holder {
+                align-items: center;
+                background: #f2f2ff;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                width: 48px;
+                // margin-top: 33px;
+                // margin-left: 32px;
+                padding: 12px;
+            }
+
+            .mission-title {
+                font-family: $font;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 30px;
+                letter-spacing: -0.408px;
+                color: #343434;
+            }
+
+            .mission-description {
+                font-family: $font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 170%;
+                letter-spacing: -0.408px;
+                color: #969696;
+            }
+        }
+    }
+}
+
+.goals-holder {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    margin-top: 37px;
+    // border: 2px lime solid;
+    
+    .goal-holder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+        margin: 37px;
+        // border: 2px yellowgreen solid;
+        width: 795px;
+
+        .goal-text {
+            margin-right: 36px;
+
+            .goal-tag {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+                /* identical to box height, or 129% */
+        
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                overflow: hidden;
+                // border: 2px limegreen solid;
+            }
+        
+            .tag-global {
+                color: #B33CDB;
+            }
+        
+            .tag-local {
+                color: #FBBA33;
+            }
+        
+            .goal-title {
+                font-family: $font;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                // border: 1px lime solid;
+                /* identical to box height, or 133% */
+        
+        
+                color: #1F1F26;
+            }
+            
+            .goal-description {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                // border: 2px lime solid;
+            
+                letter-spacing: 0.01em;
+            
+                color: #426666;
+            }
+        }
+
+        .goal-image {
+            width: 381px;
+            // height: 286px;
+        }
+    }
+}
+
+.roadmap-holder {
+    display: flex;
+    flex-direction: column;
+    // border: 2px yellow solid;
+    margin-top: 37px;
+
+    .steps-holder {
+        display: flex;
+        flex-direction: column;
+
+        .step-holder {
+            display: flex;
+            border: 1px yellow dotted;
+
+            .step-visual {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                // border: 1px yellow dotted;
+
+                .step-order {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 6px 12px;
+                
+                    width: 32px;
+                    height: 31px;
+                
+                    border-radius: 90px;
+                
+                    width: 9px;
+                    height: 19px;
+                
+                    font-family: $font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    /* identical to box height */
+                
+                
+                    color: #FFFFFF;
+
+                    border: 1px lime solid;
+                }
+            }
+        }
+    }
+}
