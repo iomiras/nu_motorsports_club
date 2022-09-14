@@ -6,7 +6,6 @@ import experience from './content/experience.png';
 import goal1 from './content/goal1.png';
 import goal2 from './content/goal2.png';
 import goal3 from './content/goal3.png';
-import activeLine from './content/activeLine.svg'
 
 function App() {
   return (
@@ -88,12 +87,13 @@ function App() {
       {/* Roadmap */}
       <div className='roadmap-holder'>
         <h2 className='title'>Roadmap</h2>
+        <br />
 
         <div className='steps-holder'>
           <div className='step-holder'>
             <div className='step-visual'>
               <p className='step-order active'>1</p>
-              <img alt='line' src={activeLine}></img>
+              <div className='step-line active'></div>
             </div>
 
             <div className='step-text'>
@@ -102,9 +102,71 @@ function App() {
             </div>
           </div>
 
+          <div className='step-holder'>
+            <div className='step-visual'>
+              <p className='step-order'>2</p>
+              <div className='step-line'></div>
+            </div>
+
+            <div className='step-text'>
+              <h3 className='step-name'>Step 2</h3>
+              <p className='step-description'>Simulation and <br /> correction to the design</p>
+            </div>
+          </div>
+
+          <div className='step-holder'>
+            <div className='step-visual'>
+              <p className='step-order'>3</p>
+              <div className='step-line'></div>
+            </div>
+
+            <div className='step-text'>
+              <h3 className='step-name'>Step 3</h3>
+              <p className='step-description'>Assembly</p>
+            </div>
+          </div>
+
+          <div className='step-holder'>
+            <div className='step-visual'>
+              <p className='step-order'>4</p>
+              <div className='step-line invisible'></div>
+            </div>
+
+            <div className='step-text'>
+              <h3 className='step-name'>Step 4</h3>
+              <p className='step-description'>Finals</p>
+            </div>
+          </div>
+
         </div>
 
       </div>
+
+      {/* Events */}
+      <div className='events-holder'>
+        <h2 className='title'>Events</h2>
+
+        <div className='events'>
+          <div className='static-event-holder'>
+            <h2 className='event-name'>Static event</h2>
+            <p className='event-description'>Design Event: which consists in the presentation of the completed project of the car. Business Event: which consists in a simulation of the presentation of their project and Cost Event</p>
+            <a href="https://www.formula-ata.it/static-events/">
+              <button onClick={"location.href='https://google.com"} className='btn-what-is-it'>What is it?</button>
+            </a>
+          </div>
+
+          <div className='dynamic-event-holder'>
+            <h2 className='event-name'>Dynamic event</h2>
+            <p className='event-description'>Acceleration, Skid Pad, Autocross, Endurance and Trackdrive events</p>
+            <a href="https://www.formula-ata.it/dynamic-events/">
+              <button onClick={"location.href='https://google.com"} className='btn-what-is-it'>What is it?</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Team members */}
 
     </div >
   );
